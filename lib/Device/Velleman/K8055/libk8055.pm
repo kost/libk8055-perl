@@ -44,7 +44,7 @@ our @EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} } );
 
 our @EXPORT = ( @{ $EXPORT_TAGS{'all'} } ); 
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 sub AUTOLOAD {
     # This AUTOLOAD is used to 'autoload' constants from the constant()
@@ -78,7 +78,6 @@ XSLoader::load('Device::Velleman::K8055::libk8055', $VERSION);
 
 1;
 __END__
-# Below is stub documentation for your module. You'd better edit it!
 
 =head1 NAME
 
