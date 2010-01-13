@@ -29,9 +29,11 @@ Linux k8055 library (tested with 0.3): http://libk8055.sourceforge.net/
 libusb (newer than 0.1.9): http://libusb.sourceforge.net/ 
 kernel (newer than 2.4.18): http://www.kernel.org
 
-COPYRIGHT AND LICENCE
+REPOSITORY
 
-Put the correct copyright and licence information here.
+http://github.com/kost/libk8055-perl
+
+COPYRIGHT AND LICENCE
 
 Copyright (C) 2009 by Vlatko Kosturjak
 
