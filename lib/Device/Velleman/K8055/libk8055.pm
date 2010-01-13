@@ -240,6 +240,10 @@ pulse counter. Debounce time value may vary between 0 and 5000.
 Linux k8055 library: http://libk8055.sourceforge.net/
 For more information on this board, visit http://www.velleman.be
 
+=head1 REPOSITORY
+
+Repository is available on GitHub: http://github.com/kost/libk8055-perl
+
 =head1 AUTHOR
 
 Vlatko Kosturjak, E<lt>kost@linux.hrE<gt>
