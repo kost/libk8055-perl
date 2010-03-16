@@ -8,13 +8,14 @@ WriteMakefile(
     PREREQ_PM         => {}, # e.g., Module::Name => 1.1
     ($] >= 5.005 ?     ## Add these new keywords supported since 5.005
       (ABSTRACT_FROM  => 'lib/Device/Velleman/K8055/libk8055.pm', # retrieve abstract from module
-	META_MERGE      => {
-		resources => {
-		bugtracker  =>      'http://rt.cpan.org/NoAuth/Bugs.html?Dist=Device-Velleman-K8055-libk8055',
-		repository  =>      'http://github.com/kost/libk8055-perl'
-		}
-	},
        AUTHOR         => 'Vlatko Kosturjak <kost@linux.hr>') : ()),
+($ExtUtils::MakeMaker::VERSION < 6.46 ? () : (	
+    META_MERGE      => {
+	    resources => {
+	    bugtracker  =>      'http://rt.cpan.org/NoAuth/Bugs.html?Dist=Device-Velleman-K8055-libk8055',
+	    repository  =>      'http://github.com/kost/libk8055-perl'
+	    }
+    })),
     LIBS              => ['-lk8055 -lusb '], # e.g., '-lm'
     DEFINE            => '', # e.g., '-DHAVE_SOMETHING'
     INC               => '-I.', # e.g., '-I. -I/usr/include/other'
